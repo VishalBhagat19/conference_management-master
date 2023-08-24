@@ -1,0 +1,134 @@
+h1 {font-size: 2.4rem;margin-bottom: 30px; font-family: cursive; color: #232121;}
+p{color: #282727;margin-bottom: 30px; font-family: cursive;}
+h3{color: #282727;margin-bottom: 30px; font-family: cursive;}
+body{background-color:#ECF2FF}
+.bg-blue {background-color:#3E54AC}
+.navbar-brand img { height:30px; }
+.navbar-dark .navbar-nav .nav-link {color:black;     font-family: cursive;}
+.navbar-dark .navbar-nav .active .nav-link {color:black;     font-family: cursive;}
+.navbar-nav li a
+   {
+     color:black !important;
+     font-weight: 600;
+     font-size: 20px;
+     font-family: cursive;
+}
+
+
+
+
+ 
+.banner img {width:100%;}
+.blog-box {text-align: center; margin-bottom: 20px; }
+.blog-box h3 { margin:20px 0; font-size:22px; color:#282727; font-family: cursive;}
+.blog-box p { color:rgb(27, 27, 27); text-align: justify; font-family: cursive;}
+.blog-box span, .posted-on span { font-style: italic; color:#000; }
+.blog-box img { width:100%; border-radius: 15%; box-shadow:5px 5px 12px #3E54AC}
+.mtb-40 { margin:40px 0; min-height:450px;}
+.banner-box {position: relative;}
+.intro-text { width:100%; position: absolute; top:30%; text-align: center; color:rgb(209, 199, 199);}
+.intro-text-box { width: 62%;margin: auto;background-color: rgba(96, 96, 96, 0.6);padding: 20px;border: 10px solid #808080;}
+.intro-text-box h1 {font-size:3em; font-family: cursive;}
+
+.blog-right h3 {background-color:#000;color: #fff; padding:5px 15px; font-family: cursive;}
+.blog-right p{font-family: cursive; text-align: justify; color: #282727;} 
+.blog-right h1{font-family: cursive; text-align: justify; color: #282727;}
+.blog-left p{font-family: cursive; text-align: justify; color: #282727;}
+.blog-left h1{font-family: cursive; text-align: justify; color: #282727;}
+
+.detail-img {margin:40px 0px;}
+.rb-box-img { margin-right:15px; }
+.rb-box-img img { width:100px;}
+.rb-box {display: flex;}
+.rb-box-desc h4 {color: #282727;font-weight: 300; font-family: cursive;} 
+.rb-box-desc p {color: #282727; font-family: cursive; }
+.rb-box {margin-bottom:10px;}
+.recent-post a:hover {text-decoration: none;}
+.recent-post a:hover h4 {color: #282727;; font-family: cursive;}
+
+.categories {margin-top:20px;}
+.categories ul {padding:0;margin:0; list-style: none;}
+.categories ul li { border-bottom:1px dotted #ccc; padding:5px 0px;}
+.categories ul li a {color: #fff;display: block;}
+.categories ul li a:hover {color: #fff; text-decoration: none;}
+.body-content { min-height:380px; }
+.error-404 { text-align: center; }
+.error-404 h1{ font-size:10em;color: #282727; font-family: cursive;}
+.service-error {text-align:center; padding:50px 0;}
+.service-error h1 { font-size: 3em; color: #282727;text-transform: uppercase;color:#3E54AC; font-family: cursive;}
+
+/*Admin*/
+.login-box {box-shadow: 1px 1px 7px #666;padding:20px;margin-top:10%;}
+.login-box h1 {font-size:24px;text-align: center;margin-bottom: 20px;font-family: cursive;color: #fff; }
+.dash-left ul {padding:0;margin:0;list-style:none;}
+.dash-left ul li { background-color: #3E54AC; margin-bottom:5px;}
+.dash-left ul li a {color:#333; padding:5px 15px; display: block;}
+.dash-left ul li:hover a {background-color:#101423; text-decoration: none; color:rgb(248, 242, 242);}
+.dash-left ul li a.active {background-color:#3E54AC; color:rgb(11, 11, 11);}
+.dash-header {display:flex; justify-content: space-between;}
+.table img { width:80px; }
+.action a {margin:0 5px;}
+
+footer {background-color:#3E54AC;color:#fff; padding:20px;}
+
+/*validation*/
+.ng-valid[required], .ng-valid.required {border: 1px solid #42A948;}
+.error {color:#ff0000;}
+.success { color:green; }
+.contact-message { text-align: center; }
+
+@media (max-width: 767px) {
+	.intro-text {display: none;}
+}
+.carousel-inner img{
+    height: 700px;
+	width: 700px;
+}
+@media(max-width: 414px)
+{
+    .carousel-inner img{
+    height: auto;
+}
+}
+
+.x{
+    border:2px solid black;
+    box-shadow:5px 5px 12px #3E54AC;
+    height: 300px;
+}
+.carousel-inner img{
+    height: 600px;
+}
+@media(max-width: 414px)
+{
+    .carousel-inner img{
+    height: auto;
+}
+}
+.carousel-indicators [data-bs-target]{
+    width:12px;
+    height:12px;
+    border-radius: 50%;
+    background-color:darkred;
+}
+
+
+.Menu_fonts a{
+    font-family: cursive;
+
+}
+/* .Home_card{
+    
+        box-shadow: 5px 5px 12px black;
+        padding: auto;
+        margin: auto;
+        /*border: 2px solid black;*/
+        /* margin-top: 10px;
+        height: 500px;
+        width: 400px;
+} */
+/* .Home_card:hover{
+        color: white;
+        background-color: DARKRED;
+}
+     */ 

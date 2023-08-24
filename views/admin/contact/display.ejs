@@ -1,0 +1,63 @@
+<%- include('../../header.ejs')%>
+  <section class="dashboard-wrap mtb-40">
+    <div class="container">
+      <div class="body-content">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="dash-left">
+              <ul>
+                <li class="active"><a href="/admin/dashboard" class="active">Dashboard</a></li>
+                            <li><a href="/admin/blogdisplay">Blogs</a></li>
+                            <li><a href="/admin/category">Categories</a></li>
+                            <li><a href="/admin/registration">Registation</a></li>
+                            <li><a href="/admin/contact">Contact</a></li>
+                            <li><a href="/admin/about">About</a></li>
+                           
+                            <li><a href="/logout">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="dash-right">
+              <div class="dash-header">
+                <div class="dash-title">
+                  <h1>contact</h1>
+                </div>
+              </div>
+              <table class="table table-bordered table-striped">
+                <tr>
+                  <th >Serial.no</th>
+                  <th >name</th>
+                  <th >email</th>
+                  <th >phone number</th>
+                  <th >description</th>
+                </tr>
+                <% i=1 %>
+
+                <% contact.forEach((b)=>{ %>
+                    <tr>
+                        <td >
+                            <%= i++ %>
+                        </td>
+                        <td >
+                           <%= b.name %>
+                        </td>
+                        <td >
+                            <%= b.email %>
+                        </td>
+                        <td >
+                          <%= b.phone %>
+                        </td>
+                        <td >
+                            <%= b.description %>
+                        </td>
+
+                   <% }) %>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <%- include('../../footer.ejs')%>

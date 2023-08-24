@@ -1,0 +1,36 @@
+<%- include('header.ejs')%>
+  <section class="cmspage mtb-40">
+    <div class="container">
+      <div class="page-desc">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <img src="images/contact.webp" alt="img-fluid" width="100%" height="400px">
+          </div>
+
+          <div class="col-md-6">
+            <h1>Contact</h1>
+            <div>
+              <form action="/contactinsert" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" placeholder="Name">
+                </div><br>
+                <div class="form-group">
+                  <input type="text" name="email" class="form-control" placeholder="E-Mail">
+                </div><br>
+                <div class="form-group">
+                  <input type="text" name="phone" class="form-control" placeholder="Phone">
+                </div><br>
+                <div class="form-group">
+                  <textarea name="description" rows="5" class="form-control" placeholder="Message"></textarea>
+                </div><br>
+                <div class="form-group">
+                  <button class="btn btn-success" type="submit">Send Message</button>
+                </div>
+            </div>
+          </div>
+       
+
+        </div>
+      </div>
+  </section>
+  <%- include('footer.ejs')%>

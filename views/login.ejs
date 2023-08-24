@@ -1,0 +1,31 @@
+<%- include('header.ejs')%>
+<section class="cmspage mtb-40">
+<div class="container-fluid form">
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4 x">
+			<h1>Log In</h1>
+      <p>Don't have an account?<a href="/register">Register now</a></p>
+      <% if(message.length>0){%>
+       <div class="alert alert-success">
+         <%=message%></div>
+          <% }%>
+          <% if(message1.length>0){%>
+            <div class="alert alert-danger">
+              <%=message1%></div>
+               <% }%>
+            <form action="/verify_login"method="post">
+            <div class="mb-3 ">
+            <input type="email" name="email" placeholder="Enter the email" required class="form-control">
+            </div>
+            <div class="mb-3">
+            <input type="password" name="password" placeholder="password" required class="form-control">
+            </div>
+            <button class="btn btn-primary">Log In</button>
+            </form>
+		</div>
+	</div>
+</div>
+</section>
+
+<%- include('footer.ejs')%>

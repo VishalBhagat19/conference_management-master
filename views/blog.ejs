@@ -1,0 +1,35 @@
+<%- include('header.ejs')%>
+
+
+    <section class="featured-blog mtb-40">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">-------------------------Some Conferences------------------------</h1>
+
+                <% r.forEach((c)=>{ %>
+                    <div class="col-md-4">
+                        <div class="blog-box">
+                            <img src="<%= c.image.url %>" width="200px" height="200px" alt="" />
+
+                            <h3>
+                                <%=c.title%>
+                            </h3>
+                            <p>
+                                <%= c.createdAt.toLocaleDateString() %>
+                            </p>
+                            <p>
+                                <%= c.description.slice(0,200) %>
+                            </p>
+                            <a href="/blogdetail/<%=c._id %>" style="color:#b3f604;" class="btn btn-success">Read
+                                more...</a>
+                        </div>
+
+                    </div>
+
+                    <% }) %>
+
+
+            </div>
+        </div>
+    </section>
+    <%- include('footer.ejs')%>

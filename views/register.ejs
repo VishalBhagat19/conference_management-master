@@ -1,0 +1,40 @@
+<%- include('header.ejs') %>
+<section class="cmspage mtb-40">
+  <div class="container">
+    <div class="page-desc">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h1 style="font-family: cursive;font-size: 30px; ">Create an Account</h1>
+          <p style="font-family: cursive;">Already have a Blog username and password?<a href="/login">log in</a></p>
+          <h1 style="font-family: cursive;font-size: 30px;">Personal Information</h1>
+          <% if(message.length>0){%>
+            <div class="alert alert-danger">
+              <%=message%></div>
+              <% }%>
+          <form action="/adminregister"method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+              <input type="text" name="name" class="form-control" placeholder="Name">
+            </div>
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control" placeholder="E-Mail">
+            </div>
+            <div class="mb-3">
+              <input type="password" name="password" class="form-control" placeholder="password">
+            </div>
+            <div class="mb-3">
+              <input type="password" name="cpassword" class="form-control" placeholder="Confirm password">
+            </div>
+            <p style="font-family: cursive;">Please note that your email will be your user name when signing into your Blog account.</p>
+            <div class="mb-3">
+              <button type="submit" class="btn btn-success" style="font-family: cursive;">CREATE ACCOUNT</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<%- include('footer.ejs')%>
+
+
+

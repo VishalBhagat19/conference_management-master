@@ -1,0 +1,61 @@
+<%- include('../../header.ejs') %>
+<br><br>
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>Serial.no</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Enrollment Number</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>College</th>
+            <th>Course</th>
+            <th>Branch</th>
+        </tr>
+        <% i=1 %>
+            <% f.forEach((b)=>{ %>
+                <tr>
+                    <td>
+                        <%= i++ %>
+                    <td>
+                        <%= b.name %>
+                    </td>
+                    <td>
+                        <%= b.email %>
+                    </td>
+                    <td>
+                        <%= b.phone %>
+                    </td>
+                    <td>
+                        <%= b.rollnumber %>
+                    </td>
+                    <td>
+                        <%= b.gender %>
+                    </td>
+
+                    <td>
+                        <%= b.address %>
+                    </td>
+                    <td>
+                        <%= b.college %>
+                    </td>
+                    <td>
+                        <%= b.course %>
+                    </td>
+                  
+                
+                    <td>
+                        <%= b.branch %>
+                    </td>
+                    
+                </tr>
+                    
+                <% }) %>
+    </table>
+    <br><br>
+ <a href="/" class="btn btn-info">Submit</a>
+ <br><br>
+
+
+    <%- include('../../footer.ejs') %>

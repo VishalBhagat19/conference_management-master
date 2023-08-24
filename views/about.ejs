@@ -1,0 +1,12 @@
+<%- include('header.ejs')%>
+<!-- <section class="cmspage mtb-40"> -->
+    <div class="container-fluid about">
+      <h1 class="text-center ">About</h1>
+      <% d.forEach((item)=>{ %>   
+      <div class="page-desc">
+        <p><%= item.content %></p>
+      </div>
+    </div>
+    <%})%> 
+<!-- </section> -->
+<%- include('footer.ejs')%>
